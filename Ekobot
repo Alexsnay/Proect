@@ -1,0 +1,17 @@
+from telebot import TeleBot
+from logicabot import quest 
+import random
+
+
+bot = TeleBot('7769485342:AAHHqo1_UWtx2rBpfA1rmPNB9kFy6jxYngg')
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, 'Привет! Этот бот преднозначен для спасения природы с твоей помощю напиши /dailyquest для того чтобы получить задание!!! ')
+@bot.message_handler(commands=['dailyquest'])
+def dailyquest(message):
+    bot.send_message(message.chat.id,random.choice(quest),random.choice(quest),random.choice(quest))
+    
+
+
+bot.infinity_polling()
