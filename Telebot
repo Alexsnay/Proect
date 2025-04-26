@@ -2,7 +2,7 @@ import time, threading, schedule
 from telebot import TeleBot
 from bot_logica import gen_pass
 from bot_logica import flipcoin
-API_TOKEN = '7769485342:AAHHqo1_UWtx2rBpfA1rmPNB9kFy6jxYngg'
+API_TOKEN = ''
 bot = TeleBot(API_TOKEN)
 
     
